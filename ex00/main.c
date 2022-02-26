@@ -5,38 +5,39 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dantremb <dantremb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/24 17:02:12 by dantremb          #+#    #+#             */
-/*   Updated: 2022/02/25 13:10:55 by dantremb         ###   ########.fr       */
+/*   Created: 2022/02/26 12:03:45 by dantremb          #+#    #+#             */
+/*   Updated: 2022/02/26 13:39:38 by dantremb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char a)
-{
-	write(1, &a, 1);
+void	ft_putchar(char c)
+	{
+	write(1, &c, 1);
 }
 
-void	ft_putnbr(int nb)
+void	rush(int lmax, int hmax)
 	{
-	if (nb < 0)
+	int	h;
+	int	l;
+
+	h = 0;
+	while (h < hmax)
 	{
-		ft_putchar('-');
-		nb = nb * -1;
-	}
-	if (nb > 9)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-	}
-	else
-	{
-		ft_putchar(nb + 48);
+	l = 0;
+		while (l < lmax)
+		{
+			ft_putchar(111);
+			l++;
+		}
+		write(1, "\n", 1);
+		h++;
 	}
 }
-
 
 int	main(void)
-	{
-	ft_putnbr(4343);
+{
+	rush(5, 5);
+	return (0);
 }
