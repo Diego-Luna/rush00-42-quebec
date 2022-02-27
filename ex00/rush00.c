@@ -6,12 +6,13 @@
 /*   By: dantremb <dantremb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:21:56 by dantremb          #+#    #+#             */
-/*   Updated: 2022/02/26 15:52:09 by dantremb         ###   ########.fr       */
+/*   Updated: 2022/02/26 19:32:36 by jlevesqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "ft_putchar.c"
+
+void	ft_putchar(int x, int y, int len, int hei);
 
 void	rush(int len, int hei)
 {

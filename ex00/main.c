@@ -6,11 +6,11 @@
 /*   By: dantremb <dantremb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:21:54 by dantremb          #+#    #+#             */
-/*   Updated: 2022/02/26 15:53:46 by dantremb         ###   ########.fr       */
+/*   Updated: 2022/02/26 19:32:13 by jlevesqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rush00.c"
+void	rush(int a, int b);
 
 int	main(void)
 {
