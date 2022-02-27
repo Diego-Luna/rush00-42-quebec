@@ -6,7 +6,7 @@
 /*   By: dluna-lo <marvin@42quebec.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 17:11:07 by dluna-lo          #+#    #+#             */
-/*   Updated: 2022/02/27 18:26:25 by dluna-lo         ###   ########.fr       */
+/*   Updated: 2022/02/27 18:45:57 by dluna-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void	rush(int x, int y)
 		{
 			ft_what_print(x_table, y_table, x, y);
 		}
-		x = 0;
+		x_table = 0;
 		write(1, "\n", 1);
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: dantremb <dantremb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:21:56 by dantremb          #+#    #+#             */
-/*   Updated: 2022/02/27 18:30:37 by dluna-lo         ###   ########.fr       */
+/*   Updated: 2022/02/27 18:44:13 by dluna-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void	rush(int x, int y)
 		{
 			ft_what_print(x_table, y_table, x, y);
 		}
-		x = 0;
+		x_table = 0;
 		write(1, "\n", 1);
 	}
 }
