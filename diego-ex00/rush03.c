@@ -6,7 +6,7 @@
 /*   By: dantremb <dantremb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:21:56 by dantremb          #+#    #+#             */
-/*   Updated: 2022/02/27 17:24:13 by dluna-lo         ###   ########.fr       */
+/*   Updated: 2022/02/27 18:30:37 by dluna-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,23 +32,23 @@ void	ft_what_print(int x, int y, int max_x, int max_y)
 		ft_putchar(' ');
 }
 
-void	rush(int len, int hei)
+void	rush(int x, int y)
 {
-	int	x;
-	int	y;
+	int	x_table;
+	int	y_table;
 
-	if (len < 0 || hei < 0)
+	if (x < 0 || y < 0)
 	{
 		write(1, "Please enter a valid number\n", 29);
 		return ;
 	}
-	y = 0;
-	x = 0;
-	while (++y <= hei)
+	y_table = 0;
+	x_table = 0;
+	while (++y_table <= y)
 	{
-		while (++x <= len)
+		while (++x_table <= x)
 		{
-			ft_what_print(x, y, len, hei);
+			ft_what_print(x_table, y_table, x, y);
 		}
 		x = 0;
 		write(1, "\n", 1);
