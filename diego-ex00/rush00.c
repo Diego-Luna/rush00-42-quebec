@@ -6,7 +6,7 @@
 /*   By: dantremb <dantremb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:21:56 by dantremb          #+#    #+#             */
-/*   Updated: 2022/02/27 19:04:19 by dluna-lo         ###   ########.fr       */
+/*   Updated: 2022/02/27 19:23:18 by dluna-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putchar(char print);
 
-void	ft_what_print(int x, int y, int max_x, int max_y)
+void	ft_what_print0(int x, int y, int max_x, int max_y)
 {
 	if (x == 1 && y == 1)
 		ft_putchar('o');
@@ -48,7 +48,7 @@ void	rush(int x, int y)
 	{
 		while (++x_table <= x)
 		{
-			ft_what_print(x_table, y_table, x, y);
+			ft_what_print0(x_table, y_table, x, y);
 		}
 		x_table = 0;
 		write(1, "\n", 1);
