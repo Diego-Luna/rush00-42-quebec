@@ -6,7 +6,7 @@
 /*   By: dantremb <dantremb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:21:54 by dantremb          #+#    #+#             */
-/*   Updated: 2022/02/27 18:51:25 by dluna-lo         ###   ########.fr       */
+/*   Updated: 2022/02/27 19:07:53 by dluna-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@ void	rush(int a, int b);
 
 int	main(void)
 {
-	rush(5, 3);
+	rush(1, 3);
 	return (0);
 }

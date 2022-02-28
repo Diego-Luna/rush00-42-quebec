@@ -6,7 +6,7 @@
 /*   By: dantremb <dantremb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:21:56 by dantremb          #+#    #+#             */
-/*   Updated: 2022/02/27 18:44:30 by dluna-lo         ###   ########.fr       */
+/*   Updated: 2022/02/27 19:05:33 by dluna-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	rush(int x, int y)
 	int	x_table;
 	int	y_table;
 
-	if (x < 0 || y < 0)
+	if (x <= 0 || y <= 0)
 	{
 		write(1, "Please enter a valid number\n", 29);
 		return ;
